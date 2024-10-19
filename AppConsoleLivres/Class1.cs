@@ -5,22 +5,20 @@
         
         public string Titre { get; set; }
         public string Auteur { get; set; }
-        public int AnneePublication { get; set; }
-        public string ISBN { get; set; }
+        public int NombrePages { get; set; }
 
         
-        public Livre(string titre, string auteur, int anneePublication, string isbn)
+        public Livre(string titre, string auteur, int nombrePages)
         {
             Titre = titre;
             Auteur = auteur;
-            AnneePublication = anneePublication;
-            ISBN = isbn;
+            this.NombrePages = nombrePages; 
         }
 
         
         public void AfficherInfo()
         {
-            Console.WriteLine($"Titre : {Titre}, Auteur : {Auteur}, Année : {AnneePublication}, ISBN : {ISBN}");
+            Console.WriteLine($"Titre : {Titre}, Auteur : {Auteur}, Nombre de pages : {NombrePages}");
         }
     }
 }
