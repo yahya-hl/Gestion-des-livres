@@ -16,6 +16,17 @@
             revue2.AfficherInfo();
             Console.WriteLine();
             revue3.AfficherInfo();
+
+            Roman roman1 = new Roman("Le Petit Prince", "Antoine de Saint-Exupéry", 96, "Fiction");
+            Roman roman2 = new Roman("1984", "George Orwell", 328, "Dystopie");
+            Roman roman3 = new Roman("Les Misérables", "Victor Hugo", 1232, "Roman historique");
+
+            // Affichage des détails des trois romans
+            roman1.AfficherInfo();
+            Console.WriteLine(); // Ligne vide pour la lisibilité
+            roman2.AfficherInfo();
+            Console.WriteLine();
+            roman3.AfficherInfo();
         }
     }
 }
